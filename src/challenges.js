@@ -22,7 +22,7 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(array) {
   // seu código aqui
-  for(index = 0; index < array.length; index += 1){
+  for(let index = 0; index < array.length; index += 1){
     return array[array.length - 1] + "," + " " + array[0]
   }
 };
@@ -34,9 +34,14 @@ function footballPoints(wins, ties) {
 };
 
 // Desafio 6
-function highestCount() {
+function highestCount(array) {
   // seu código aqui
-}
+  var contagemFinal = 0
+  for(let index = 0; index < array.length; index += 1){
+   if(Math.max.apply(null, array) == array[index]){contagemFinal += 1}
+  }
+  return contagemFinal
+};
 
 // Desafio 7
 function catAndMouse() {
