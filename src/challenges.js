@@ -22,8 +22,6 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(array) {
   // seu código aqui
-  
-  let array = [];
 
   for(index = 0; index < array.length; index += 1){
     return " array[array.length - 1] + array[0] "
@@ -31,9 +29,10 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
-}
+  return wins * 3 + ties * 1
+};
 
 // Desafio 6
 function highestCount() {
