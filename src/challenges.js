@@ -75,12 +75,42 @@ function fizzBuzz(array) {
 };
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
-}
-function decode() {
+
+  for(let index = 0; index < string.length; index += 1){
+    
+    if(string[index] == "a"){string.replace(index, "1")
+  }
+    if(string[index] == "e"){string.replace(index, "2")
+  }
+    if(string[index] == "i"){string.replace(index, "3")
+  }
+    if(string[index] == "o"){string.replace(index, "4")
+  }
+    if(string[index] == "u"){string.replace(index, "5")
+  }
+ }
+ return string;
+};
+
+function decode(string) {
   // seu código aqui
-}
+  for(let index = 0; index < string.length; index += 1){
+    
+    if(string[index] == 1){string.replace(index, "a")
+  }
+    if(string[index] == 2){string.replace(index, "b")
+  }
+    if(string[index] == 3){string.replace(index, "c")
+  }
+    if(string[index] == 4){string.replace(index, "d")
+  }
+    if(string[index] == 5){string.replace(index, "e")
+  }
+ }
+ return string;
+};
 
 module.exports = {
   calcArea,
