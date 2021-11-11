@@ -44,14 +44,35 @@ function highestCount(array) {
 };
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-}
+  if(cat1 - mouse > cat2 - mouse){
+    return "cat2"
+  }
+  else if(cat1 - mouse < cat2 - mouse){
+    return "cat1"
+  }
+  else if(cat1 - mouse === cat2 - mouse){
+    return "os gatos trombam e o rato foge"
+  }
+};
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(array) {
   // seu código aqui
-}
+  let arrFinal = []
+  for(let index = 0; index < array.length; index += 1)
+  
+  if(array[index] % 3 == 0 && array[index] % 5 != 0){arrFinal.push("fizz")
+  }
+  else if(array[index] % 5 == 0 && array[index] % 3 != 0){arrFinal.push("buzz")
+  }
+  else if(array[index] % 3 == 0 && array[index] % 5 == 0){arrFinal.push("fizzBuzz")
+  }
+  else {arrFinal.push("bug!")
+  }
+  return arrFinal
+};
 
 // Desafio 9
 function encode() {
